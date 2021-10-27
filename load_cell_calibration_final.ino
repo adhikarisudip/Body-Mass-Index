@@ -20,7 +20,7 @@ void setup() {
   scale.tare(); //Reset the scale to 0
 
   long zero_factor = scale.read_average(); //Get a baseline reading
-  Serial.print("Zero factor: "); //This can be used to remove the need to tare the scale. Useful in permanent scale projects.
+  Serial.print("Zero factor: "); 
   Serial.println(zero_factor);
 }
 
@@ -30,7 +30,7 @@ void loop() {
 
   Serial.print("Reading: ");
   Serial.print(scale.get_units(), 1);
-  Serial.print(" lbs"); //Change this to kg and re-adjust the calibration factor if you follow SI units like a sane person
+  Serial.print(" lbs");
   Serial.print(" calibration_factor: ");
   Serial.print(calibration_factor);
   Serial.println();
