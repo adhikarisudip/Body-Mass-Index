@@ -22,9 +22,9 @@ digitalWrite(9,HIGH);
 delayMicroseconds(20);
 digitalWrite(9,LOW);
 delayMicroseconds(20);
-duration = pulseIn(echo_pin, HIGH); //To receive the reflected signal.
+duration = pulseIn(echo_pin, HIGH); //To receive the reflected signal from the ultrasonic sensor.
 gross= duration*0.034/2;
-cm =204-gross;
+cm =209-gross;
 feet= cm/30.48;
 cm= cm-feet*30.48;
 inch= cm/2.54;
