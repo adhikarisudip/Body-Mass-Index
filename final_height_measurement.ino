@@ -1,6 +1,6 @@
 #include<LiquidCrystal.h>
 
-LiquidCrystal lcd(1, 2, 4, 5, 6, 7); 
+LiquidCrystal lcd(1, 2, 4, 5, 6, 7); //Interface pins of the LCD
 const int trig_pin=9;
 const int echo_pin=10;
 float gross,cm,duration;
@@ -11,7 +11,7 @@ lcd.begin(20,4);
 lcd.setCursor(0,0);
 lcd.print("Height Measurement");
 lcd.setCursor(0,1); 
-lcd.print("Your height is:");
+lcd.print("Your height is:"); //set the cursor to column 0 and line 0
 pinMode(9,OUTPUT);
 pinMode(10,INPUT);
 }
@@ -22,7 +22,7 @@ digitalWrite(9,HIGH);
 delayMicroseconds(20);
 digitalWrite(9,LOW);
 delayMicroseconds(20);
-duration = pulseIn(echo_pin, HIGH); 
+duration = pulseIn(echo_pin, HIGH); //To receive the reflected signal.
 gross= duration*0.034/2;
 cm =204-gross;
 feet= cm/30.48;
