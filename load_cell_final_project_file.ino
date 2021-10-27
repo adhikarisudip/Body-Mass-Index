@@ -12,9 +12,8 @@ void setup() {
   Serial.println("HX711 scale demo");
 
   scale.begin(DOUT, CLK);
-  scale.set_scale(calibration_factor); //This value is obtained by using the SparkFun_HX711_Calibration sketch
-  scale.tare(); //Assuming there is no weight on the scale at start up, reset the scale to 0
-
+  scale.set_scale(calibration_factor); 
+  scale.tare(); 
   Serial.println("Readings:");
 }
 
