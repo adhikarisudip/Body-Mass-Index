@@ -19,14 +19,14 @@ void setup() {
   scale.set_scale();
   scale.tare(); //Reset the scale to 0
 
-  long zero_factor = scale.read_average(); //Get a baseline reading
+  long zero_factor = scale.read_average(); //Get a baseline reading as input
   Serial.print("Zero factor: "); 
   Serial.println(zero_factor);
 }
 
 void loop() {
 
-  scale.set_scale(calibration_factor); //Adjust to this calibration factor
+  scale.set_scale(calibration_factor); //Adjust to this calibration factor for better result
 
   Serial.print("Reading: ");
   Serial.print(scale.get_units(), 1);
