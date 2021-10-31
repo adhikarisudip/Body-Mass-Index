@@ -17,7 +17,7 @@ pinMode(9,OUTPUT);
 pinMode(10,INPUT);
 }
 
-//this runs again and again ultil device shut down
+//this runs again and again until program closes.
 void loop() {
 digitalWrite(9,HIGH);
 delayMicroseconds(20);
