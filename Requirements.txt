@@ -1,1 +1,4 @@
 Arduino Uno
+ultrasonic sensor
+hx711 analog to digital converter amplifieer
+loadcell
