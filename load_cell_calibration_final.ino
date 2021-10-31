@@ -16,7 +16,7 @@ void setup() {
   Serial.println("Press - or z to decrease calibration factor");
 
   scale.begin(DOUT, CLK);
-  scale.set_scale();
+  scale.set_scale(); //initialize scale
   scale.tare(); //Reset the scale to 0
 
   long zero_factor = scale.read_average(); //Get a baseline reading as input
