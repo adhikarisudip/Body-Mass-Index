@@ -3,7 +3,7 @@
 #define DOUT  5
 #define CLK  6
 
-HX711 scale;
+HX711 scale; //initializing hx711 loadcell.
 
 float calibration_factor = -7050; //-7050 worked for my 440lb max scale setup
 
