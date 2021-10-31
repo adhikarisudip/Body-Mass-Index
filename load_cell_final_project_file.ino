@@ -8,7 +8,7 @@ float calibration_factor =-7050.0;
 
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600); // initialize serial monitor
   Serial.println("HX711 scale demo");
 
   scale.begin(DOUT, CLK);
