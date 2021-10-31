@@ -33,7 +33,7 @@ void loop() {
   Serial.print(" lbs");
   Serial.print(" calibration_factor: ");
   Serial.print(calibration_factor);
-  Serial.println();
+  Serial.println(); //print
 
   if(Serial.available())
   {
