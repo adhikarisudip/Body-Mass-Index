@@ -4,3 +4,4 @@ It will show the data on the dispaly after measuring.
 
 ## Requirements
 1. Arduino
+2. ultrasonic sensor
