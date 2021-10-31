@@ -6,3 +6,4 @@ It will show the data on the dispaly after measuring.
 1. Arduino
 2. ultrasonic sensor
 3. load cell
+4. lcd display
