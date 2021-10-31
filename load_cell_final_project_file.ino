@@ -12,7 +12,7 @@ void setup() {
   Serial.println("HX711 scale demo");
 
   scale.begin(DOUT, CLK);
-  scale.set_scale(calibration_factor); 
+  scale.set_scale(calibration_factor); //calibrate scale using provided calibration factor.
   scale.tare(); 
   Serial.println("Readings:");
 }
