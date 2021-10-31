@@ -1,4 +1,4 @@
-#include<LiquidCrystal.h>
+#include<LiquidCrystal.h> // including all dependencies for LCD display
 
 LiquidCrystal lcd(1, 2, 4, 5, 6, 7); //Interface pins of the LCD
 const int trig_pin=9;
@@ -6,6 +6,7 @@ const int echo_pin=10;
 float gross,cm,duration;  //input to be taken
 int inch,feet;
 
+// setup fuction runs for one time
 void setup() {
 lcd.begin(20,4);
 lcd.setCursor(0,0);
